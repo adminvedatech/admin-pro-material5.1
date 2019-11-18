@@ -1,0 +1,5 @@
+ver el usuario y password : git config --global -e salir con ":q"
+decirle a git quienes somos git config --global user.name "adminvedatech" enter git config --global user.email "redilberto@gmail.com" enter
+salir con: ":q"
+
+

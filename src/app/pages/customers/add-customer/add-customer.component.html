@@ -1,0 +1,26 @@
+
+<div fxLayout="row" fxLayoutGap="10px">
+  <div>
+    
+    <input #fileInput style="display: none" type="file" (change)="onFileSelected($event)">
+    <button mat-stroked-button (click)="fileInput.click()" class="btn btn-sm btn-info">Seleccione un Archivo</button>
+
+  </div>
+  <span class="text-file-name">{{ name }} </span>
+  
+  <div>
+    <button mat-stroked-button (click)="onUploadFile()" class="btn btn-sm btn-info">Enviar Archivo al Servidor</button>
+  
+  </div>
+  
+  <div>
+    <button mat-stroked-button (click)="cancelFile()"> Cancelar</button>
+
+  </div>
+  
+  <div>
+    <mat-progress-bar mode="determinate" value="{{progress.percentage}}"></mat-progress-bar>
+
+  </div>
+</div>
+
