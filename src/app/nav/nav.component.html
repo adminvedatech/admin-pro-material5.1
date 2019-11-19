@@ -6,12 +6,13 @@
     <h1>SimpleCRM</h1>
     <span class="menu-spacer"></span>
     <div>
-      <a mat-button [routerLink]="'/accounts'"> Accounts </a>
-      <a mat-button [routerLink]="'/create-account'"> Create Account </a>
-      <a mat-button [routerLink]="'/contacts'"> Contacts </a>
-      <a mat-button [routerLink]="'/create-contact'"> Create Contact </a>
-      <a mat-button [routerLink]="'/activities'"> Activities </a>
-      <a mat-button [routerLink]="'/create-activity'"> Create Activity </a>
+      <!-- <app-menu1></app-menu1> -->
+      <a mat-button [routerLink]="'/banks'"> Banks </a>
+      <a mat-button [routerLink]="'/customers'"> Customers </a>
+      <a mat-button [routerLink]="'/suppliers'"> Suppliers </a>
+      <a mat-button [routerLink]="'/productions'"> Productions </a>
+      <a mat-button [routerLink]="'/products'"> Products </a>
+      <a mat-button [routerLink]="'/reports'"> Reports </a>
 
     </div>
   </mat-toolbar-row>
@@ -23,7 +24,7 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav>
     <mat-nav-list>
-
+        <!-- <app-menu1></app-menu1> -->
       <a mat-list-item [routerLink]="'/accounts'"> Accounts </a>
       <a mat-list-item [routerLink]="'/create-account'"> Create Account </a>
       <a mat-list-item [routerLink]="'/contacts'"> Contacts </a>

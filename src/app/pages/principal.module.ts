@@ -13,11 +13,15 @@ import { BankComponent } from './bank/bank.component';
 import { ProductionsComponent } from './productions/productions.component';
 import { CustomersComponent } from './customers/customers.component';
 import { ProductsComponent } from './products/products.component';
+import { NavComponent } from '../nav/nav.component';
+import { NavModule } from '../nav/nav.module';
+import { Menu1Component } from '../menu1/menu1.component';
 
 
 @NgModule({
   declarations: [
     PrincipalComponent,
+    NavComponent,
     BankComponent,
     ProductionsComponent,
     CustomersComponent,
@@ -31,6 +35,7 @@ import { ProductsComponent } from './products/products.component';
     BrowserAnimationsModule,
     FormsModule,
     BankModule,
+    NavModule,
     PAGES_ROUTES,
     MatToolbarModule
   ],

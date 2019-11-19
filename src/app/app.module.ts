@@ -16,12 +16,15 @@ import { ErrorService } from './services/error.service';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NofoundComponent } from './nofound/nofound.component';
 import { APP_ROUTES } from './app-routing.module';
+import { Menu1Component } from './menu1/menu1.component';
+import { NavModule } from './nav/nav.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     NofoundComponent,
+   
     // PrincipalComponent
   ],
   imports: [
@@ -30,7 +33,7 @@ import { APP_ROUTES } from './app-routing.module';
     FlexLayoutModule,
     FormsModule,
     LoginModule,
-   APP_ROUTES,
+     APP_ROUTES,
     HttpClientModule,
     BrowserAnimationsModule,
     PrincipalModule,
