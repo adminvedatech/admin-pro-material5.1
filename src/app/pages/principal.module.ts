@@ -16,6 +16,9 @@ import { ProductsComponent } from './products/products.component';
 import { NavComponent } from '../nav/nav.component';
 import { NavModule } from '../nav/nav.module';
 import { Menu1Component } from '../menu1/menu1.component';
+import { SuppliersModule } from './suppliers/suppliers.module';
+import { CustomersModule } from './customers/customers.module';
+import { ReportsModule } from './reports/reports.module';
 
 
 @NgModule({
@@ -24,7 +27,6 @@ import { Menu1Component } from '../menu1/menu1.component';
     NavComponent,
     BankComponent,
     ProductionsComponent,
-    CustomersComponent,
     ProductsComponent
     
   ],
@@ -35,6 +37,9 @@ import { Menu1Component } from '../menu1/menu1.component';
     BrowserAnimationsModule,
     FormsModule,
     BankModule,
+    SuppliersModule,
+    CustomersModule,
+    ReportsModule,
     NavModule,
     PAGES_ROUTES,
     MatToolbarModule

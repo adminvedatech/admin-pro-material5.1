@@ -7,15 +7,21 @@ import { NofoundComponent } from './nofound/nofound.component';
 import { BankComponent } from './pages/bank/bank.component';
 import { CustomersComponent } from './pages/customers/customers.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { SuppliersComponent } from './pages/suppliers/suppliers.component';
+import { ProductionsComponent } from './pages/productions/productions.component';
+import { ReportsComponent } from './pages/reports/reports.component';
 
 const appRoutes: Routes = [
 
   { path: '', component: PrincipalComponent,
     children: [
-      { path: 'bank', component: BankComponent },
+      { path: 'banks', component: BankComponent },
       { path: 'customers', component: CustomersComponent },
+      { path: 'suppliers', component: SuppliersComponent },
+      { path: 'productions', component: ProductionsComponent },
+      { path: 'reports', component: ReportsComponent },
       { path: 'products', component: ProductsComponent },
-      { path: '', redirectTo: '/bank', pathMatch: 'full' },
+      { path: '', redirectTo: '/banks', pathMatch: 'full' },
 
     ] },
 
