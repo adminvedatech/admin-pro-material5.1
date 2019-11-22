@@ -15,25 +15,45 @@ import { AuthRequestOptions } from './auth/auth.request';
 import { ErrorService } from './services/error.service';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NofoundComponent } from './nofound/nofound.component';
-import { APP_ROUTES } from './app-routing.module';
 import { Menu1Component } from './menu1/menu1.component';
 import { NavModule } from './nav/nav.module';
+import { NavComponent } from './nav/nav.component';
+// import { PAGES_ROUTES } from './pages/principal-routing.module';
+import { BankComponent } from './pages/bank/bank.component';
+import { CustomersComponent } from './pages/customers/customers.component';
+import { ProductionsComponent } from './pages/productions/productions.component';
+import { SuppliersComponent } from './pages/suppliers/suppliers.component';
+import { ReportsComponent } from './pages/reports/reports.component';
+import { SalesComponent } from './pages/sales/sales.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { BankAccountsComponent } from './pages/bank/bank-accounts/bank-accounts.component';
+import { BankGraphComponent } from './pages/bank/bank-graph/bank-graph.component';
+// import { AppRoutingModule, APP_ROUTES } from './app-routing.module';
+import { PAGES_ROUTES } from './pages/principal-routing.module';
+import { AppRoutingModule } from './app-routing.module';
+// import { APP_ROUTES, AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    PrincipalComponent,
     NofoundComponent,
    
     // PrincipalComponent
   ],
+ 
   imports: [
     BrowserModule,
     AngularMaterialModule,
     FlexLayoutModule,
     FormsModule,
     LoginModule,
-     APP_ROUTES,
+    AppRoutingModule,
+    PrincipalModule,
+   // APP_ROUTES,
+    PAGES_ROUTES,
+   
     HttpClientModule,
     BrowserAnimationsModule,
     PrincipalModule,

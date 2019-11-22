@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { PAGES_ROUTES } from './principal-routing.module';
+// import { PAGES_ROUTES, PrincipalRoutingModule } from './principal-routing.module';
 import { PrincipalComponent } from './principal.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BankModule } from './bank/bank.module';
@@ -19,37 +19,23 @@ import { Menu1Component } from '../menu1/menu1.component';
 import { SuppliersModule } from './suppliers/suppliers.module';
 import { CustomersModule } from './customers/customers.module';
 import { ReportsModule } from './reports/reports.module';
+import { ChartsModule } from 'ng2-charts';
+import { PAGES_ROUTES } from './principal-routing.module';
+import { SuppliersComponent } from './suppliers/suppliers.component';
+// import { PrincipalRoutingModule } from './principal-routing.module';
 
 
 @NgModule({
   declarations: [
-    PrincipalComponent,
-    NavComponent,
-    BankComponent,
-    ProductionsComponent,
-    ProductsComponent
-    
+   // PrincipalComponent,
+    CustomersComponent,
+    SuppliersComponent
   ],
   imports: [
     CommonModule,
     AngularMaterialModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    BankModule,
-    SuppliersModule,
-    CustomersModule,
-    ReportsModule,
-    NavModule,
-    PAGES_ROUTES,
-    MatToolbarModule
-  ],
-  exports: [
-     MatToolbarModule,
-     AngularMaterialModule,
-     BrowserModule,
-     BrowserAnimationsModule,
-     
+    PAGES_ROUTES
+    // PrincipalRoutingModule
   ]
 })
 export class PrincipalModule { }

@@ -13,34 +13,17 @@ import { ReportsComponent } from './pages/reports/reports.component';
 
 const appRoutes: Routes = [
 
-  { path: '', component: PrincipalComponent,
-    children: [
-      { path: 'banks', component: BankComponent },
-      { path: 'customers', component: CustomersComponent },
-      { path: 'suppliers', component: SuppliersComponent },
-      { path: 'productions', component: ProductionsComponent },
-      { path: 'reports', component: ReportsComponent },
-      { path: 'products', component: ProductsComponent },
-      { path: '', redirectTo: '/banks', pathMatch: 'full' },
-
-    ] },
-
+ 
   { path: 'login', component: LoginComponent },
  
-  { path: '**', component: NofoundComponent },
-
-
  
+{
+  path: '',
+  component: PrincipalComponent,
+ loadChildren: () => import('./pages/principal.module').then(m => m.PrincipalModule)
+},
 
-
-  // { path: 'bank',
-  // canActivate: [ AuthGuard ],
-  // loadChildren: () => import('./pages/bank/bank.module').then(m => m.BankModule)
-  // },
-  // { path: 'suppliers',
-  // canActivate: [ AuthGuard ],
-  // loadChildren: () => import('./pages/suppliers/suppliers.module').then(m => m.SuppliersModule)
-  // },
+{ path: '**', component: NofoundComponent },
   // { path: 'accounting-books',
   // canActivate: [ AuthGuard ],
   // loadChildren: () => import('./pages/accounting-books/accounting-books.module').then(m => m.AccountingBooksModule)
@@ -72,6 +55,11 @@ const appRoutes: Routes = [
   // { path: 'login', component: LoginComponent },
 
 ];
+@NgModule({
+  imports: [RouterModule.forRoot(appRoutes)],
+  exports: [RouterModule]
+ })
 
+ export class AppRoutingModule { }
 
-export const APP_ROUTES = RouterModule.forRoot( appRoutes, { useHash: true } );
+// export const APP_ROUTES = RouterModule.forRoot( appRoutes, { useHash: true } );
