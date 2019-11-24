@@ -5,7 +5,14 @@ import { BankListComponent } from './bank-list/bank-list.component';
 import { AddBankComponent } from './add-bank/add-bank.component';
 
 const routes: Routes = [
- 
+  {
+    path: '',
+    component: BankComponent
+  },
+  {
+   path: '/bank-list',
+   component: BankListComponent
+ }
 
 ];
 @NgModule({

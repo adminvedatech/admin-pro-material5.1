@@ -2,14 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './auth/auth.guard';
-import { PrincipalComponent } from './pages/principal.component';
 import { NofoundComponent } from './nofound/nofound.component';
-import { BankComponent } from './pages/bank/bank.component';
-import { CustomersComponent } from './pages/customers/customers.component';
-import { ProductsComponent } from './pages/products/products.component';
-import { SuppliersComponent } from './pages/suppliers/suppliers.component';
-import { ProductionsComponent } from './pages/productions/productions.component';
-import { ReportsComponent } from './pages/reports/reports.component';
+import { PagesComponent } from './pages/pages.component';
 
 const appRoutes: Routes = [
 
@@ -19,8 +13,8 @@ const appRoutes: Routes = [
  
 {
   path: '',
-  component: PrincipalComponent,
- loadChildren: () => import('./pages/principal.module').then(m => m.PrincipalModule)
+  component: PagesComponent,
+ loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
 },
 
 { path: '**', component: NofoundComponent },
