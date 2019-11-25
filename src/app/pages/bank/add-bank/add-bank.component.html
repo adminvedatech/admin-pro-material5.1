@@ -1,3 +1,43 @@
-<p>
-  add-bank works!
-</p>
+<form  [formGroup]="form">
+
+  <div class="container">
+    <div class="some-input">
+        <input type="hidden" formControlName="id" />
+
+  <!--   <mat-form-field>
+      <input matInput [matDatepicker]="picker" formControlName="date1" placeholder="Choose a date transaction">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field> -->
+   <!--  <mat-form-field>
+      <input matInput [matDatepicker]="picker2" placeholder="Choose a payment date ">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+      </mat-form-field> -->
+      <mat-form-field>
+        <input matInput placeholder="Bank Name" formControlName="nameBank">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Account Number" formControlName="accountNumber">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Initial Balance" formControlName="balance">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Observations" formControlName="observations">
+      </mat-form-field>
+      
+      <!-- <mat-form-field class="example-full-width">
+        <input type="text" placeholder="Assignee" aria-label="Assignee" matInput [formControl]="myControl" [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+          <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+            {{option.name}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field> -->
+    </div>
+    <button type="button" class="btn btn-primary"><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>Primary</button>
+    
+    
+  </div>
+  </form>

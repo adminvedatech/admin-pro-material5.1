@@ -10,7 +10,7 @@ const routes: Routes = [
     component: BankComponent
   },
   {
-   path: '/bank-list',
+   path: 'bank-list',
    component: BankListComponent
  }
 

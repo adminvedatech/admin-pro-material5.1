@@ -40,3 +40,13 @@ mat-card-footer .button-flat {
     margin-bottom: 0;
     list-style-type: none;
 }
+ .some-input {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+.some-input > * {
+    width: 50%;
+}

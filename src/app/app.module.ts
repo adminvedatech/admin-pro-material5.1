@@ -7,7 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { HttpClient } from 'selenium-webdriver/http';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AngularMaterialModule } from './angular-material/angular-material.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginModule } from './login/login.module';
 import { AuthRequestOptions } from './auth/auth.request';
 import { ErrorService } from './services/error.service';
@@ -33,7 +33,6 @@ import { PagesComponent } from './pages/pages.component';
     BrowserModule,
     AngularMaterialModule,
     FlexLayoutModule,
-    FormsModule,
     LoginModule,
     AppRoutingModule,
     PagesModule,

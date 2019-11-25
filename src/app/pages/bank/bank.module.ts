@@ -9,17 +9,23 @@ import { AccountsComponent } from './accounts/accounts.component';
 import { BankAccountsComponent } from './bank-accounts/bank-accounts.component';
 import { BankGraphComponent } from './bank-graph/bank-graph.component';
 import { ChartsModule } from 'ng2-charts';
+import { AngularMaterialModule } from 'src/app/angular-material/angular-material.module';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
     BankListComponent,
-    AddBankComponent,
+  //  AddBankComponent,
     AccountsComponent,
     BankAccountsComponent,
     BankAccountsComponent,
-    BankGraphComponent],
-  imports: [
+    BankGraphComponent
+  ],
+    imports: [
     CommonModule,
+   // ReactiveFormsModule,
+   // BrowserModule,
     BankRoutingModule,
     ChartsModule,
 
