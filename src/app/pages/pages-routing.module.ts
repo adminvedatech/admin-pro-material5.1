@@ -3,6 +3,7 @@ import { BankComponent } from './bank/bank.component';
 import { CustomersComponent } from './customers/customers.component';
 import { SuppliersComponent } from './suppliers/suppliers.component';
 import { AddBankComponent } from './bank/add-bank/add-bank.component';
+import { AddBankTransactionComponent } from './bank/add-bank-transaction/add-bank-transaction.component';
 
 
 const principalRoutes: Routes = [
@@ -13,6 +14,10 @@ const principalRoutes: Routes = [
     {
       path: 'add-bank',
       component: AddBankComponent
+    },
+    {
+      path: 'add-bank-transaction',
+      component: AddBankTransactionComponent
     },
         {
           path: 'customers',

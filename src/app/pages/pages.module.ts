@@ -10,6 +10,7 @@ import { AddBankComponent } from './bank/add-bank/add-bank.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BankModule } from './bank/bank.module';
+import { AddBankTransactionComponent } from './bank/add-bank-transaction/add-bank-transaction.component';
 
 @NgModule({
     declarations: [
@@ -17,6 +18,7 @@ import { BankModule } from './bank/bank.module';
       CustomersComponent,
       SuppliersComponent,
       AddBankComponent,
+      AddBankTransactionComponent,
       PagesComponent
     ],
     imports: [

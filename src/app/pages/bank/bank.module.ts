@@ -12,6 +12,7 @@ import { ChartsModule } from 'ng2-charts';
 import { AngularMaterialModule } from 'src/app/angular-material/angular-material.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { AddBankTransactionComponent } from './add-bank-transaction/add-bank-transaction.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BrowserModule } from '@angular/platform-browser';
     AccountsComponent,
     BankAccountsComponent,
     BankAccountsComponent,
-    BankGraphComponent
+    BankGraphComponent,
+  //  AddBankTransactionComponent
   ],
     imports: [
     CommonModule,
