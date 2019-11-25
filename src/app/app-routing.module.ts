@@ -16,9 +16,13 @@ const appRoutes: Routes = [
   component: PagesComponent,
  loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
 },
-
+// {
+//   path: 'bank',
+//   // component: PagesComponent,
+//  loadChildren: () => import('./pages/bank/bank.module').then(m => m.BankModule)
+// },
 { path: '**', component: NofoundComponent },
-  // { path: 'accounting-books',
+   //{ path: 'accounting-books',
   // canActivate: [ AuthGuard ],
   // loadChildren: () => import('./pages/accounting-books/accounting-books.module').then(m => m.AccountingBooksModule)
   // },
