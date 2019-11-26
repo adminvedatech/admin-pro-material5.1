@@ -13,6 +13,7 @@ import { AngularMaterialModule } from 'src/app/angular-material/angular-material
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AddBankTransactionComponent } from './add-bank-transaction/add-bank-transaction.component';
+import { BankTransactionComponent } from './bank-transaction/bank-transaction.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { AddBankTransactionComponent } from './add-bank-transaction/add-bank-tra
     BankAccountsComponent,
     BankAccountsComponent,
     BankGraphComponent,
+  //  BankTransactionComponent,
   //  AddBankTransactionComponent
   ],
     imports: [

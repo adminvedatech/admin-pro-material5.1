@@ -11,6 +11,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BankModule } from './bank/bank.module';
 import { AddBankTransactionComponent } from './bank/add-bank-transaction/add-bank-transaction.component';
+import { BankTransactionComponent } from './bank/bank-transaction/bank-transaction.component';
 
 @NgModule({
     declarations: [
@@ -19,6 +20,7 @@ import { AddBankTransactionComponent } from './bank/add-bank-transaction/add-ban
       SuppliersComponent,
       AddBankComponent,
       AddBankTransactionComponent,
+      BankTransactionComponent,
       PagesComponent
     ],
     imports: [
