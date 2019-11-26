@@ -5,26 +5,27 @@
           <input type="hidden" formControlName="id" />
   
     <mat-form-field>
-        <input matInput [matDatepicker]="picker" formControlName="date1" placeholder="Choose a date transaction">
+        <input matInput [matDatepicker]="picker" formControlName="date1" placeholder="fecha de expedicion">
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
       <mat-form-field>
-        <input matInput [matDatepicker]="picker2" placeholder="Choose a payment date ">
+        <input matInput [matDatepicker]="picker2" formControlName="date2" placeholder="Fecha de cobro">
           <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
           <mat-datepicker #picker2></mat-datepicker>
         </mat-form-field>
+       
         <mat-form-field>
-          <input matInput placeholder="Bank Name" formControlName="Numero de Cheque">
+          <input matInput placeholder="Numero de Cheque" formControlName="checkNumber">
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="Account Number" formControlName="A Nombre de ">
+          <input matInput placeholder="A Nombre de" formControlName="toName">
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="Initial Balance" formControlName="valor">
+          <input matInput placeholder="Valor de Cheque" formControlName="value">
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="Observations" formControlName="Observaciones">
+          <input matInput placeholder="Observaciones" formControlName="observations">
         </mat-form-field>
         
         <!-- <mat-form-field class="example-full-width">

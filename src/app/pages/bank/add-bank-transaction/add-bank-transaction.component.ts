@@ -18,9 +18,11 @@ export class AddBankTransactionComponent implements OnInit {
       // name: new FormControl('')
    // }),
       id: new FormControl(''),
-      nameBank: new FormControl(''),
-      accountNumber: new FormControl(''),
-      balance: new FormControl(''),
+      date1: new FormControl(''),
+      date2: new FormControl(''),
+      checkNumber: new FormControl(''),
+      toName: new FormControl(''),
+      value: new FormControl(''),
       observations: new FormControl('')
   });
 }
